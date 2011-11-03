@@ -1,0 +1,23 @@
+﻿@if (Request.Browser.IsMobileDevice && Request.HttpMethod == "GET")
+{
+    <div class="view-switcher ui-bar-a">
+        @{
+            bool isMobileMode = Request.Browser.IsMobileDevice;
+
+            if (Request.Cookies["ViewSwitcher"] != null && Request.Cookies["ViewSwitcher"]["Mobile"] != null)
+            {
+                isMobileMode = String.Equals(Request.Cookies["ViewSwitcher"]["Mobile"], "true");
+            }
+
+            if (isMobileMode)
+            {
+                @Html.ActionLink("Go to Desktop Site", "SwitchView", "ViewSwitcher", new { mobile = false, returnUrl = Request.Url.PathAndQuery }, new { rel = "external" })
+            }
+            else
+            {
+                @Html.ActionLink("Go to Mobile Site", "SwitchView", "ViewSwitcher", new { mobile = true, returnUrl = Request.Url.PathAndQuery }, new { rel = "external" })
+            }
+        }
+    </div>
+}
+ 

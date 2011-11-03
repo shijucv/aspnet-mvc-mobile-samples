@@ -1,0 +1,57 @@
+﻿.view-switcher {
+    padding: 0 0 20px 0; 
+    font-weight: normal;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #e80c4d;
+    font-weight: bold;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input[type="text"].input-validation-error,
+input[type="password"].input-validation-error {
+    border: solid 1px #e80c4d;
+}
+
+.validation-summary-errors {
+    color: #e80c4d;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+h1 {
+    color: #888888;
+    font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
+    font-size: 1.25em;
+}
+h2 {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 1.0em;
+}
+
+h4 {
+    font-size: .9em;
+}
+
+h5, h6 {
+    font-size: .8em;
+}
+
+.pp_logo img
+{
+	margin-top: 20px;
+	width: 200px;
+}
