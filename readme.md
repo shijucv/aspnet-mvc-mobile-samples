@@ -5,8 +5,8 @@ These samples demonstrate specific features of ASP.NET MVC related to targeting 
 
 The samples and supporting articles were authored by [Akira Inoue](https://github.com/chack411) of Microsoft Japan. Akira can also be found on [twitter](http://twitter.com/chack411).
 
-* [Mvc3_ViewSwitcher](/tree/master/Mvc3_ViewSwitcher) demonstrates how to switch between a mobile view and a desktop view using ASP.NET MVC 3.
-* [Mvc_ViewSwitcher](/tree/master/Mvc_ViewSwitcher) demonstrates how to switch views using new features in the forthcoming ASP.NET MVC 4.
+* [Mvc3_ViewSwitcher](../tree/master/Mvc3_ViewSwitcher) demonstrates how to switch between a mobile view and a desktop view using ASP.NET MVC 3.
+* [Mvc_ViewSwitcher](../tree/master/Mvc_ViewSwitcher) demonstrates how to switch views using new features in the forthcoming ASP.NET MVC 4.
 
 ## Running the Samples
 
