@@ -5,27 +5,53 @@ using System.Web.Mvc;
 
 namespace ViewSwitcherMvc3
 {
-    // in Global.asax.cs Application_Start you can insert these into the ViewEngine chain like so:
+    // this sample is derived from by Scott Hanselman and Peter Mournfield
+    // for background, see this post:
+    // http://www.hanselman.com/blog/NuGetPackageOfTheWeek10NewMobileViewEnginesForASPNETMVC3SpeccompatibleWithASPNETMVC4.aspx
+
+    // the view engine defined here is inserted at the head of the chain of
+    // view engines like so:
     //
     // ViewEngines.Engines.Insert(0, new MobileCapableRazorViewEngine());
     //
-    // or
-    //
-    // ViewEngines.Engines.Insert(0, new MobileCapableRazorViewEngine("iPhone")
-    // {
-    //     ContextCondition = (ctx => ctx.Request.UserAgent.IndexOf(
-    //         "iPhone", StringComparison.OrdinalIgnoreCase) >= 0)
-    // });
+    // in this sample, the view engine is inserted using WebActivator, using
+    // the bootstrapper in the App_Start folder. More info on WebActivator here:
+    // https://bitbucket.org/davidebbo/webactivator/wiki/Home
+    // alternatively, it could also be inserted in the Global.asax.cs in Application_Start
 
     public class MobileCapableRazorViewEngine : RazorViewEngine
     {
-        public string ViewModifier { get; set; }
-        public Func<HttpContextBase, bool> ContextCondition { get; set; }
+        // this identifier is added to the name of the view that the engine looks
+        // for, if the provided condition is met
+        private readonly string _viewModifier;
 
+        // a function that accepts the http context and
+        // returns true if this view engine should be used
+        private readonly Func<HttpContextBase, bool> _contextCondition;
+
+        // by default, the condition for using this view engine
+        // is that ASP.NET believes that the request is from
+        // a mobile browser
         public MobileCapableRazorViewEngine()
             : this("Mobile", context => context.Request.Browser.IsMobileDevice)
         {
         }
+
+        #region additional constructors
+
+        // the following constructors allow this view engine to customized further.
+        // the constructors are not used in this sample, but included to demonstrate one
+        // way to provide extensibility.
+        //
+        // for example, to include an additional set of views specific to iPhone
+        // you could setup another instance of the view engine using:
+        //
+        // ViewEngines.Engines.Insert(0,
+        //      new MobileCapableRazorViewEngine(
+        //          "iPhone", 
+        //          ctx => ctx.Request.UserAgent.IndexOf("iPhone", StringComparison.OrdinalIgnoreCase) >= 0
+        //      )
+        // );
 
         public MobileCapableRazorViewEngine(string viewModifier)
             : this(viewModifier, context => context.Request.Browser.IsMobileDevice)
@@ -34,9 +60,10 @@ namespace ViewSwitcherMvc3
 
         public MobileCapableRazorViewEngine(string viewModifier, Func<HttpContextBase, bool> contextCondition)
         {
-            ViewModifier = viewModifier;
-            ContextCondition = contextCondition;
+            _viewModifier = viewModifier;
+            _contextCondition = contextCondition;
         }
+        #endregion
 
         public override ViewEngineResult FindView(ControllerContext controllerContext, string viewName,
                                                   string masterName, bool useCache)
@@ -49,22 +76,39 @@ namespace ViewSwitcherMvc3
             return NewFindView(controllerContext, partialViewName, null, useCache, true);
         }
 
+        // this logic is used by both FindView and FindPartial, it uses _viewModifier to attempt to find a match 
         private ViewEngineResult NewFindView(ControllerContext controllerContext, string viewName, string masterName,
                                              bool useCache, bool isPartialView)
         {
-            if (!ContextCondition(controllerContext.HttpContext))
+            if (!_contextCondition(controllerContext.HttpContext))
             {
-                return new ViewEngineResult(new string[] { }); // we found nothing and we pretend we looked nowhere
+                // this result contains a list of places we attempted to look for a view
+                // since the condition to use the engine wasn't met, we didn't look anywhere
+                // hence the empty array
+                return new ViewEngineResult(new string[] { });
             }
 
-            HttpCookie viewSwitcher = controllerContext.RequestContext.HttpContext.Request.Cookies["ViewSwitcher"];
+            // we look for the cookie that is set in the ViewSwitcher controller
+            var viewSwitcher = controllerContext.RequestContext.HttpContext.Request.Cookies["ViewSwitcher"];
 
-            if (viewSwitcher != null && viewSwitcher["Mobile"] != null)
+            // if the mobile flag has been explicitly turned off, then
+            // we'll pass to the next view engine in the chain
+            // also note that we'll never check for this flag unless 
+            // the initial condition for using the engine has been met
+            if (viewSwitcher != null && viewSwitcher["Mobile"] != null && String.Equals(viewSwitcher["Mobile"], "false"))
             {
-                if (String.Equals(viewSwitcher["Mobile"], "false"))
-                    return new ViewEngineResult(new string[] { }); // we found nothing and we pretend we looked nowhere
+                // again, since conditions were not met, we return an empty array for the 'attempts'
+                return new ViewEngineResult(new string[] { }); 
             }
 
+            // all of the necessary conditions have been met, we can be constructing the name 
+            // of the view we'd like to use
+            return FindModifiedView(controllerContext, viewName, masterName, useCache, isPartialView);
+        }
+
+        private ViewEngineResult FindModifiedView(ControllerContext controllerContext, string viewName, string masterName,
+                                                  bool useCache, bool isPartialView)
+        {
             // Get the name of the controller from the path
             string controller = controllerContext.RouteData.Values["controller"].ToString();
             string area = "";
@@ -77,7 +121,7 @@ namespace ViewSwitcherMvc3
             }
 
             // Apply the view modifier
-            var newViewName = string.Format("{0}.{1}", viewName, ViewModifier);
+            var newViewName = string.Format("{0}.{1}", viewName, _viewModifier);
 
             // Create the key for caching purposes          
             string keyPath = Path.Combine(area, controller, newViewName);
@@ -106,8 +150,8 @@ namespace ViewSwitcherMvc3
             foreach (string rootPath in locationFormats)
             {
                 string currentPath = string.IsNullOrEmpty(area)
-                                            ? string.Format(rootPath, newViewName, controller)
-                                            : string.Format(rootPath, newViewName, controller, area);
+                                         ? string.Format(rootPath, newViewName, controller)
+                                         : string.Format(rootPath, newViewName, controller, area);
 
                 if (FileExists(controllerContext, currentPath))
                 {
@@ -123,7 +167,7 @@ namespace ViewSwitcherMvc3
                     }
                 }
             }
-            return new ViewEngineResult(new string[] { }); // we found nothing and we pretend we looked nowhere
+            return new ViewEngineResult(new string[] {}); // we found nothing and we pretend we looked nowhere
         }
     }
 }
