@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 using System.Web.Security;
-using Mvc_ViewSwitcher.Models;
+using ViewSwitcherMvc3.Models;
 
-namespace Mvc_ViewSwitcher.Controllers
+namespace ViewSwitcherMvc3.Controllers
 {
     // This controller contains the out-of-the-box logic.
     // It has no relation to switching views for mobile and desktop

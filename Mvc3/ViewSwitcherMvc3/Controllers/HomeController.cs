@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace Mvc_ViewSwitcher.Controllers
+namespace ViewSwitcherMvc3.Controllers
 {
     public class HomeController : Controller
     {

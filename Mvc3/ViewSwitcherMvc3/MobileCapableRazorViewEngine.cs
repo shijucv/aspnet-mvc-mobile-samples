@@ -3,7 +3,7 @@ using System.IO;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Microsoft.Web.Mvc
+namespace ViewSwitcherMvc3
 {
     // in Global.asax.cs Application_Start you can insert these into the ViewEngine chain like so:
     //
@@ -34,8 +34,8 @@ namespace Microsoft.Web.Mvc
 
         public MobileCapableRazorViewEngine(string viewModifier, Func<HttpContextBase, bool> contextCondition)
         {
-            this.ViewModifier = viewModifier;
-            this.ContextCondition = contextCondition;
+            ViewModifier = viewModifier;
+            ContextCondition = contextCondition;
         }
 
         public override ViewEngineResult FindView(ControllerContext controllerContext, string viewName,

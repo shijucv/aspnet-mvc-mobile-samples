@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 
-namespace Mvc_ViewSwitcher.Models
+namespace ViewSwitcherMvc3.Models
 {
     // These models contain the out-of-the-box logic.
     // They have no relation to switching views for mobile and desktop.

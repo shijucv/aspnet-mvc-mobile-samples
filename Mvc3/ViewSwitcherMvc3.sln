@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc3_ViewSwitcher", "Mvc3_ViewSwitcher\Mvc3_ViewSwitcher.csproj", "{29BAA27C-2DBB-4C74-9637-473D7BF68C33}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewSwitcherMvc3", "ViewSwitcherMvc3\ViewSwitcherMvc3.csproj", "{29BAA27C-2DBB-4C74-9637-473D7BF68C33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
