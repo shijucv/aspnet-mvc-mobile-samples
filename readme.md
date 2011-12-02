@@ -17,7 +17,7 @@ You can also download a developer preview of [ASP.NET MVC 4](http://www.asp.net/
 You'll want to install [NuGet](http://www.nuget.org/) in order to manage the dependencies.
 
 **NOTE:** You will not see the link for switching views when you access the sample from a browser that
-ASP.NET does not recognize as mobile. For example, you'll need to use something like the [Windows Phone Emulator](msdn.com/en-us/library/ff402563) to see the correct behavior. For more information on how ASP.NET determines browser capabilities [Browser Definition File Schema](http://msdn.microsoft.com/en-us/library/ms228122.aspx)]. It is likely that the default behavior will not be sufficient for many production applications.
+ASP.NET does not recognize as mobile. For example, you'll need to use something like the [Windows Phone Emulator](msdn.com/en-us/library/ff402563) to see the correct behavior. For more information on how ASP.NET determines browser capabilities [Browser Definition File Schema](http://msdn.microsoft.com/en-us/library/ms228122.aspx). It is likely that the default behavior will not be sufficient for many production applications.
 
 ## MOAR OSS!
 Find out more about [Microsoft and Open Source](http://www.asp.net/mvc/open-source).
