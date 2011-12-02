@@ -10,9 +10,9 @@ The samples and supporting articles were authored by [Akira Inoue](https://githu
 
 ## Running the Samples
 
-These samples require Visual Studio 2010. You can find instructions on obtain a **free** copy of Visual Studio Web Developer Express at the official [ASP.NET site](http://www.asp.net/mvc).
+These samples require Visual Studio 2010. Find out how to obtain a **free** copy of Visual Studio Web Developer Express at the official [ASP.NET site](http://www.asp.net/mvc).
 
-You can also obtain a developer preview of [ASP.NET MVC 4](http://www.asp.net/mvc/mvc4) that can be installed side-by-side with ASP.NET MVC 3.
+You can also download a developer preview of [ASP.NET MVC 4](http://www.asp.net/mvc/mvc4) that can be installed side-by-side with ASP.NET MVC 3.
 
 Finally, you'll want to install [NuGet](http://www.nuget.org/) in order to manage the dependencies.
 
