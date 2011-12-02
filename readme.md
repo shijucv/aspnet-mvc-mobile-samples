@@ -2,11 +2,13 @@
 ## Mobile Features of ASP.NET MVC
 
 These samples demonstrate specific features of ASP.NET MVC related to targeting mobile devices.
+Specifically, it focuses on the technical issue of how to deliver a _different set of markup to different devices_. 
+It does not address the question of how to determine if doing so is the appropriate solution for your application.
 
 The samples and supporting articles were authored by [Akira Inoue](https://github.com/chack411) of Microsoft Japan. Akira can also be found on [twitter](http://twitter.com/chack411).
 
-* **Mvc3_ViewSwitcher** demonstrates how to switch between a mobile view and a desktop view using ASP.NET MVC 3.
-* **Mvc_ViewSwitcher** demonstrates how to switch views using new features in the forthcoming ASP.NET MVC 4.
+* **Mvc3** demonstrates how to switch between a mobile view and a desktop view using ASP.NET MVC 3.
+* **Mvc4** demonstrates how to switch views using new features in the forthcoming ASP.NET MVC 4.
 
 ## Running the Samples
 
