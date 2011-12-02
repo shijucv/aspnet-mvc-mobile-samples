@@ -14,7 +14,10 @@ These samples require Visual Studio 2010. Find out how to obtain a **free** copy
 
 You can also download a developer preview of [ASP.NET MVC 4](http://www.asp.net/mvc/mvc4) that can be installed side-by-side with ASP.NET MVC 3.
 
-Finally, you'll want to install [NuGet](http://www.nuget.org/) in order to manage the dependencies.
+You'll want to install [NuGet](http://www.nuget.org/) in order to manage the dependencies.
+
+**NOTE:** You will not see the link for switching views when you access the sample from a browser that
+ASP.NET does not recognize as mobile. For example, you'll need to use something like the [Windows Phone Emulator](msdn.com/en-us/library/ff402563) to see the correct behavior.
 
 ## MOAR OSS!
 Find out more about [Microsoft and Open Source](http://www.asp.net/mvc/open-source).
