@@ -18,3 +18,6 @@ Finally, you'll want to install [NuGet](http://www.nuget.org/) in order to manag
 
 ## MOAR OSS!
 Find out more about [Microsoft and Open Source](http://www.asp.net/mvc/open-source).
+
+## Acknowledgments
+Portions of this sample make use of the [work from Scott Hanselman and Peter Mournfield](http://www.hanselman.com/blog/NuGetPackageOfTheWeek10NewMobileViewEnginesForASPNETMVC3SpeccompatibleWithASPNETMVC4.aspx).
