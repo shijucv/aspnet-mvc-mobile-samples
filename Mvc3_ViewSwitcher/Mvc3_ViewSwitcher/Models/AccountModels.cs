@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Globalization;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
-using System.Web.Security;
 
 namespace Mvc_ViewSwitcher.Models
 {
+    // These models contain the out-of-the-box logic.
+    // They have no relation to switching views for mobile and desktop.
 
     public class ChangePasswordModel
     {
