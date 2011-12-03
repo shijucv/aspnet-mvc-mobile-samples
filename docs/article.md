@@ -1,11 +1,10 @@
-
 # Mobile Devices Detection and View Switching
 
 ## Introduction
 
 Today, we browse various web sites using iPhone, iPad, Android, Windows Phone 7 and so on. Since capabilities differ across devices, web developers sometimes need to detect browser capabilities when developing cross-platform mobile web applications. In some cases, it is best to implement this detection on server side and to deliver different sets of markup depending on the device..
  
-![requests from mobile devices and responses from web servers](../img/fig1-1.png)
+![requests from mobile devices and responses from web servers](img/fig1-1.png)
 
 This article demonstrates how to 'switch views' when a mobile device is detected. That is, how to deliver different content to a mobile device.In this article, we will use ASP.NET MVC 4 Developer Preview.
 
@@ -61,7 +60,7 @@ If you want to create more specific views, layouts, or partial views for other d
 
 After this code runs, when an Apple iPhone browser makes a request, your application will use the `Views\Shared\_Layout.iPhone.cshtml` layout (that is, if ones exists).
 
-![View Switching in ASP.NET MVC 4 Developer Preview](../img/fig1-2.png)
+![View Switching in ASP.NET MVC 4 Developer Preview](img/fig1-2.png)
 
 ## jQuery Mobile with ASP.NET MVC 4
 
@@ -74,7 +73,7 @@ This package installs jQuery Mobile and some helper files, including the followi
 * `Views/Shared/_Layout.Mobile.cshtml`, which is a jQuery Mobile-based layout.
 * A view-switcher component, which consists of the `Views/Shared/_ViewSwitcher.cshtml` partial view and the `ViewSwitcherController.cs` controller.
  
-![shared views](../img/fig1-3.png)
+![shared views](img/fig1-3.png)
 
 After you install the package, run your application using a mobile browser (or equivalent, like the [Firefox User Agent Switcher add-on](https://addons.mozilla.org/en-US/firefox/addon/user-agent-switcher/)). You'll see that your pages look quite different, because jQuery Mobile handles layout and styling. To take advantage of this, you can do the following:
 
@@ -124,7 +123,7 @@ Sample view-switcher component codes are as follows:
 
 It's used in the default `Views\Shared\_Layout.Mobile.cshtml` view, and it looks like this when the page is rendered:
 
-![rendered on mobile](../img/fig1-4.png)  
+![rendered on mobile](img/fig1-4.png)  
 
 If you click the link, it switchs to the desktop version of the same page.
 
@@ -137,11 +136,11 @@ In jQuery.Mobile.MVC package, the desktop layout (`_Layout.cshtml`) will not inc
 
 After adding this the desktop version of the page in mobile browser will include the mobile mode link in it.
 
-![displaying the switching link](../img/fig1-5.png)   
+![displaying the switching link](img/fig1-5.png)   
 
 However, if you browse the desktop version of the page _using desktop browser_, the mobile mode link will _not appear_ in the page.
  
-![rendered in a desktop browser](../img/fig1-6.png)   
+![rendered in a desktop browser](img/fig1-6.png)   
 
 The view switcher uses a new feature of ASP.NET MVC 4 called **Browser Overriding**. This feature lets your application treat requests as if they were coming from a different browser (user agent) than the one they're actually from. The following table lists the methods that Browser Overriding provides.
 
@@ -254,7 +253,7 @@ Unfortunately you cannot use the Display Modes feature with ASP.NET MVC 3. Inste
 
 Following figure is a sample ASP.NET MVC 3 project based on MobileViewEngines: 
  
-![a project based on MobileViewEngines](../img/fig1-7.png)   
+![a project based on MobileViewEngines](img/fig1-7.png)   
 
 For more details, you can download a sample code based on ASP.NET MVC 3 as follows: 
 <https://github.com/liike/aspnet-mvc-mobile-samples/tree/master/Mvc3>
@@ -278,7 +277,7 @@ Detect mobile devices, get very accurate handset properties and redirect to web 
 
 `PM> Install-Package 51Degrees.mobi`
  
-![installing 51Degree](../img/fig1-8.png)   
+![installing 51Degree](img/fig1-8.png)   
 
 ### WURFL Official API
 
@@ -288,7 +287,7 @@ WURFL is a data repository containing the description of thousands of mobile dev
 
 `PM> Install-Package WURFL_Official_API`
  
-![installing WURFL](../img/fig1-9.png)   
+![installing WURFL](img/fig1-9.png)   
 
 ### Accurate browser capabilities
 
@@ -305,7 +304,7 @@ The following code returns the mobile device browser capabilities. These calls w
 
 The following figure is a sample of mobile web application that is using 51degrees.mobi. You can detect screen size, pointing method and so on easily.
 
-![app using 51degrees](../img/fig1-10.png)   
+![app using 51degrees](img/fig1-10.png)   
 
 ## Summary
 
