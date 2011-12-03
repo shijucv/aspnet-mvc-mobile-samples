@@ -332,6 +332,6 @@ _(Display Modes and jQuery Mobile, the View Switcher, and Browser Overriding)_
 <http://51degrees.codeplex.com/>
 <http://nuget.org/List/Packages/51Degrees.mobi>
 
-** WURFL Official API**
+**WURFL Official API**
 <http://www.scientiamobile.com/site/index>
 <http://nuget.org/List/Packages/WURFL_Official_API>
