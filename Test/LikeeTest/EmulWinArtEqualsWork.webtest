@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="EmulWinArtEqualsWork" Id="72d419e6-27df-490e-aa7b-cdab51e87240" Owner="" Priority="0" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="" StopOnError="False" RecordedResultFile="">
+  <Items>
+    <Request Method="GET" Version="1.1" Url="http://artequalswork.com/" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <DependentRequests>
+        <Request Method="GET" Version="1.1" Url="http://www.google-analytics.com/urchin.js" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="UA-CPU" Value="x86" />
+            <Header Name="If-Modified-Since" Value="Tue, 08 Nov 2011 01:02:28 GMT" />
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://artequalswork.com/images/logo.png" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="UA-CPU" Value="x86" />
+            <Header Name="If-Modified-Since" Value="Tue, 25 Oct 2011 13:10:33 GMT" />
+            <Header Name="If-None-Match" Value="&quot;1a0cb32-25c6-43b12440&quot;" />
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://artequalswork.com/images/bg-aside.png" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="UA-CPU" Value="x86" />
+            <Header Name="If-Modified-Since" Value="Tue, 25 Oct 2011 13:10:30 GMT" />
+            <Header Name="If-None-Match" Value="&quot;1a0cb2b-c600-43835d80&quot;" />
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://artequalswork.com/images/bg.png" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="UA-CPU" Value="x86" />
+            <Header Name="If-Modified-Since" Value="Tue, 25 Oct 2011 13:10:30 GMT" />
+            <Header Name="If-None-Match" Value="&quot;1a0cb2c-2173-43835d80&quot;" />
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://www.google-analytics.com/__utm.gif" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="UA-CPU" Value="x86" />
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="utmwv" Value="1.4" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmn" Value="1506304670" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmcs" Value="utf-8" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmsr" Value="480x800" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmsc" Value="16-bit" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmul" Value="en-us" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmje" Value="1" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmfl" Value="-" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmdt" Value="ART=WORK · Critical Thinking from Nathan C. Ford" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmhn" Value="artequalswork.com" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmhid" Value="1374945334" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmr" Value="-" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmp" Value="/" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmac" Value="UA-12993243-1" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmcc" Value="__utma=95540300.1496344747.1322618816.1322618816.1322618816.1;+__utmz=95540300.1322618816.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none);+" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://secure.gaug.es/track.js" ThinkTime="1" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="UA-CPU" Value="x86" />
+            <Header Name="If-Modified-Since" Value="Tue, 15 Nov 2011 15:16:47 GMT" />
+            <Header Name="If-None-Match" Value="&quot;7412f-ed5-4b1c779ce15c0&quot;" />
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://secure.gaug.es/track.gif" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="UA-CPU" Value="x86" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="h[site_id]" Value="4ec5106bf5a1f55428000005" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[resource]" Value="http://artequalswork.com/" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[referrer]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[title]" Value="ART=WORK · Critical Thinking from Nathan C. Ford" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[user_agent]" Value="Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Microsoft; XDeviceEmulator)" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[unique]" Value="0" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[unique_hour]" Value="0" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[unique_day]" Value="0" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[unique_month]" Value="0" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[unique_year]" Value="0" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[screenx]" Value="480" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[browserx]" Value="320" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[browsery]" Value="480" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="timestamp" Value="1322618861505" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="UA-CPU" Value="x86" />
+        <Header Name="Pragma" Value="no-cache" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Version="1.1" Url="http://artequalswork.com/" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <DependentRequests>
+        <Request Method="GET" Version="1.1" Url="http://www.google-analytics.com/urchin.js" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="UA-CPU" Value="x86" />
+            <Header Name="If-Modified-Since" Value="Tue, 08 Nov 2011 01:02:28 GMT" />
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://artequalswork.com/images/logo.png" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="UA-CPU" Value="x86" />
+            <Header Name="If-Modified-Since" Value="Tue, 25 Oct 2011 13:10:33 GMT" />
+            <Header Name="If-None-Match" Value="&quot;1a0cb32-25c6-43b12440&quot;" />
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://artequalswork.com/images/bg-aside.png" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="UA-CPU" Value="x86" />
+            <Header Name="If-Modified-Since" Value="Tue, 25 Oct 2011 13:10:30 GMT" />
+            <Header Name="If-None-Match" Value="&quot;1a0cb2b-c600-43835d80&quot;" />
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://artequalswork.com/images/bg.png" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="UA-CPU" Value="x86" />
+            <Header Name="If-Modified-Since" Value="Tue, 25 Oct 2011 13:10:30 GMT" />
+            <Header Name="If-None-Match" Value="&quot;1a0cb2c-2173-43835d80&quot;" />
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://www.google-analytics.com/__utm.gif" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="UA-CPU" Value="x86" />
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="utmwv" Value="1.4" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmn" Value="1506304670" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmcs" Value="utf-8" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmsr" Value="480x800" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmsc" Value="16-bit" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmul" Value="en-us" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmje" Value="1" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmfl" Value="-" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmdt" Value="ART=WORK · Critical Thinking from Nathan C. Ford" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmhn" Value="artequalswork.com" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmhid" Value="1374945334" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmr" Value="-" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmp" Value="/" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmac" Value="UA-12993243-1" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="utmcc" Value="__utma=95540300.1496344747.1322618816.1322618816.1322618816.1;+__utmz=95540300.1322618816.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none);+" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://secure.gaug.es/track.js" ThinkTime="1" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="UA-CPU" Value="x86" />
+            <Header Name="If-Modified-Since" Value="Tue, 15 Nov 2011 15:16:47 GMT" />
+            <Header Name="If-None-Match" Value="&quot;7412f-ed5-4b1c779ce15c0&quot;" />
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://secure.gaug.es/track.gif" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="UA-CPU" Value="x86" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="h[site_id]" Value="4ec5106bf5a1f55428000005" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[resource]" Value="http://artequalswork.com/" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[referrer]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[title]" Value="ART=WORK · Critical Thinking from Nathan C. Ford" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[user_agent]" Value="Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Microsoft; XDeviceEmulator)" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[unique]" Value="0" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[unique_hour]" Value="0" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[unique_day]" Value="0" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[unique_month]" Value="0" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[unique_year]" Value="0" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[screenx]" Value="480" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[browserx]" Value="320" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="h[browsery]" Value="480" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            <QueryStringParameter Name="timestamp" Value="1322618861505" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="UA-CPU" Value="x86" />
+        <Header Name="Pragma" Value="no-cache" />
+      </Headers>
+    </Request>
+  </Items>
+  <ContextParameters>
+    <ContextParameter Name="ThresholdLlmit" Value="4000" />
+  </ContextParameters>
+  <WebTestPlugins>
+    <WebTestPlugin Classname="Microsoft.Practices.Liike.Test.ResponsePlugin, WebTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DisplayName="ResponsePlugin" Description="" />
+  </WebTestPlugins>
+</WebTest>

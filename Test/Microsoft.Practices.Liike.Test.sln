@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration Tests", "LikeeTest\Integration Tests.csproj", "{071AB7A2-B706-4F11-85AB-29D0C660A3E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{92A9276B-2DC9-45A5-9E31-7D59CCF93E83}"
+	ProjectSection(SolutionItems) = preProject
+		LikeeTest.vsmdi = LikeeTest.vsmdi
+		Local.testsettings = Local.testsettings
+		MobileSettings.testsettings = MobileSettings.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Practices.Liike.Test.ResponseValidator", "ResponseValidationRule\Microsoft.Practices.Liike.Test.ResponseValidator.csproj", "{754185E4-CBDC-4169-9515-BD63F051A6A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Practices.Liike.Test.ResPonsePlugin", "WebTest\Microsoft.Practices.Liike.Test.ResPonsePlugin.csproj", "{1D7B93DA-7971-4D90-9F96-74527930F09E}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = LikeeTest.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{071AB7A2-B706-4F11-85AB-29D0C660A3E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{071AB7A2-B706-4F11-85AB-29D0C660A3E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{071AB7A2-B706-4F11-85AB-29D0C660A3E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{071AB7A2-B706-4F11-85AB-29D0C660A3E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{754185E4-CBDC-4169-9515-BD63F051A6A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{754185E4-CBDC-4169-9515-BD63F051A6A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{754185E4-CBDC-4169-9515-BD63F051A6A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{754185E4-CBDC-4169-9515-BD63F051A6A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D7B93DA-7971-4D90-9F96-74527930F09E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D7B93DA-7971-4D90-9F96-74527930F09E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D7B93DA-7971-4D90-9F96-74527930F09E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D7B93DA-7971-4D90-9F96-74527930F09E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

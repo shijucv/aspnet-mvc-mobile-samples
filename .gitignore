@@ -21,3 +21,6 @@ MSSCCPRJ.SCC
 DebugLog.*
 *.orig
 App_Data/
+TestResults/
+*.webtestresult
+

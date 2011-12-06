@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="Deskcalebacuity2" Id="f4d0d1b7-6bde-4906-9774-d0e21c67dd20" Owner="" Priority="0" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="" StopOnError="False" RecordedResultFile="">
+  <Items>
+    <Request Method="GET" Version="1.1" Url="http://calebacuity.us/" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <DependentRequests>
+        <Request Method="GET" Version="1.1" Url="http://calebacuity.us/fonts/YanoneKaffeesatz-Regular-webfont.woff" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="Origin" Value="http://calebacuity.us" />
+            <Header Name="If-Modified-Since" Value="Tue, 11 Jan 2011 19:25:54 GMT; length=16912" />
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://calebacuity.us/fonts/YanoneKaffeesatz-Bold-webfont.woff" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="Origin" Value="http://calebacuity.us" />
+            <Header Name="If-Modified-Since" Value="Tue, 11 Jan 2011 19:25:48 GMT; length=16548" />
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://calebacuity.us/fonts/YanoneKaffeesatz-Light-webfont.woff" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="Origin" Value="http://calebacuity.us" />
+            <Header Name="If-Modified-Since" Value="Tue, 11 Jan 2011 19:25:51 GMT; length=17372" />
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://calebacuity.us/fonts/YanoneKaffeesatz-Thin-webfont.woff" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="Origin" Value="http://calebacuity.us" />
+            <Header Name="If-Modified-Since" Value="Tue, 11 Jan 2011 19:25:57 GMT; length=17480" />
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://calebacuity.us/images/bg_arrow_white.png" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://calebacuity.us/images/bg_body_2.jpg" ThinkTime="-2" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://calebacuity.us/images/border.png" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://calebacuity.us/images/overlay.png" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://calebacuity.us/images/controls.png" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://calebacuity.us/images/loading.gif" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Version="1.1" Url="http://calebacuity.us/images/loading_background.png" ThinkTime="0" Timeout="60" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+          <Headers>
+            <Header Name="Pragma" Value="no-cache" />
+          </Headers>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Pragma" Value="no-cache" />
+      </Headers>
+    </Request>
+  </Items>
+</WebTest>
